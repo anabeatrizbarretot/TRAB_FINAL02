@@ -1,4 +1,13 @@
-console.log(" script.js carregado!");
+console.log("✅ script.js carregado!");
+
+
+function exibirTextoNaTela(tag, texto) {
+  let campo = document.querySelector(tag);
+  if (campo) {
+    campo.innerHTML = texto;
+  }
+}
+
 
 function abrirFormulario() {
   document.getElementById("conteudo").innerHTML = `
@@ -34,7 +43,7 @@ function abrirFormulario() {
   });
 }
 
-// Exemplo 2 - Frutas
+
 let frutas = [];
 
 function abrirFrutas() {
@@ -132,7 +141,7 @@ function filtrarGrandes() {
   document.getElementById('saida').textContent = "filter (>4 letras): " + JSON.stringify(grandes);
 }
 
-// Exemplo 3 - Jogo Número Secreto
+
 let listaDeNumerosSorteados = [];
 let numeroLimite = 10;
 let numeroSecreto = gerarNumeroAleatorio();
