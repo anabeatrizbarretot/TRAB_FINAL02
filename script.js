@@ -1,4 +1,5 @@
-// Exemplo 1 - Formulário TXT
+console.log(" script.js carregado!");
+
 function abrirFormulario() {
   document.getElementById("conteudo").innerHTML = `
     <h2>Formulário de Valores</h2>
